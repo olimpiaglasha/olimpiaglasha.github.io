@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>B&Atilde;G</title>
+        <link rel="stylesheet" type="text/css" href="../Style/stylephoto.css" />
+        <link rel="icon" href="Photo/Lipa.ico">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <sctipt src="../Script/script.js"></sctipt>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                    } else {
+                        $('.scrollup').fadeOut();
+                    }
+                });
+                $('.scrollup').click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>YOUR&#124;BAG</h1>
+            <nav>
+                <a href="../FirstPage.html" style="color: white;text-decoration: none">НАЧАЛО</a>
+                <a>КАТАЛОГ</a>
+                <a>ЧТО_ТО ЕЩЕ</a>
+            </nav>
+        </header>
+        <main>
+            <table class="mainTable">
+                <tr>
+                    <td><img class="photo" src="../Photo/8.png"></td>
+                    <td style="text-align: start">ЧТО ТО НАПИСАНО???..</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            MAIL:<a href="mailto:pmpavl@mail.ru" style="color: white;text-decoration-line:underline">pmpavl@mail.ru</a>
+            <br>
+            ТЕЛЕФОН: +7(916)723-83-01
+        </footer>
+        <a href="#" class="scrollup">Наверх</a>
+    </body>
+</html>

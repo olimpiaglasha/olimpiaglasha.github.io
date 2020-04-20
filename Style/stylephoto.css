@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: #0000; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+ 
+header {
+    text-align: center;
+    padding: 2em 5%;
+    background: #2c3e50;
+    color: #fff;
+    min-width: 700px;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+header nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+ 
+@media screen and (max-width: 720px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+
+footer {
+    text-align: center;
+    padding: 1em 5%;
+    background: #2c3e50;
+    color: #fff;
+    min-width: 700px;
+}
+ 
+footer > div,
+footer > div::before,
+footer nav,
+footer > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+ 
+footer > div {
+    height: 100%;
+}
+ 
+footer > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+footer > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+footer nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+ 
+footer nav a:last-child {
+    padding-right: 0;
+}
+ 
+@media screen and (max-width: 720px){
+     
+    footer {
+        height: auto;
+    }
+     
+    footer > div,
+    footer > div h1,
+    footer nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+
+.scrollup{
+width:40px;
+height:40px;
+opacity:1;
+position:fixed;
+bottom:5%;
+right:5%;
+display:none;
+text-indent:-9999px;
+background: url('Photo/scroll.png') no-repeat;
+}
+
+.mainTable {
+    table-layout: fixed;
+    text-align: left;
+    padding: 1em 2%;
+    background: white;
+    color: black;
+    margin: auto;
+    width: 100%; 
+    min-width: 700px;
+}
+ 
+.mainTable > div,
+.mainTable > div::before,
+.mainTable nav,
+.mainTable > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+.mainTable > div {
+    height: 100%;
+}
+ 
+.mainTable > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+.mainTable > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+.mainTable nav a {
+    padding: 0 0.6em;
+    white-space: nowrap;
+}
+ 
+.mainTable nav a:last-child {
+    padding-right: 0;
+}
+ 
+@media screen and (max-width: 720px){
+     
+    .mainTable {
+        height: auto;
+    }
+     
+    .mainTable > div,
+    .mainTable > div h1,
+    .mainTable nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+.photo {
+    width: 40%;
+    min-width: 300px;
+    border-bottom: 1.5px solid black; 
+    border-right: 1px solid black;
+    border-radius: 7px;
+}

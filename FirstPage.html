@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>B&Atilde;G</title>
+        <link rel="stylesheet" type="text/css" href="Style/style.css" />
+        <link rel="icon" href="Photo/Lipa.ico">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <sctipt src="Script/script.js"></sctipt>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                    } else {
+                        $('.scrollup').fadeOut();
+                    }
+                });
+                $('.scrollup').click(function(){
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>YOUR&#124;BAG</h1>
+            <nav>
+                <a href="FirstPage.html" style="color: white;text-decoration: none">НАЧАЛО</a>
+                <a>КАТАЛОГ</a>
+                <a>ЧТО_ТО ЕЩЕ</a>
+            </nav>
+        </header>
+        <main >
+            <table class="mainTable">
+                <tr>
+                    <td><a href="/PageOfGoods/1.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/1.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 20000р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/2.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/2.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 1000р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/3.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/3.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 19000р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/4.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/4.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 2000р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                </tr>
+                <tr>
+                    <td><a href="/PageOfGoods/5.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/5.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 2200р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/6.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/6.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 1300р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/7.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/7.jpg"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 9000р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                    <td><a href="/PageOfGoods/8.html" style="color: black; text-decoration: none"><figure><img class="photo" src="Photo/8.png"><figcaption><b>ИМЯ ТОВАРА</b><p class="price">ЦЕНА: 2500р</p><hr noshade color="black" size=1px></figcaption></figure></a></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            MAIL:<a href="mailto:pmpavl@mail.ru" style="color: white;text-decoration-line:underline">pmpavl@mail.ru</a>
+            <br>
+            ТЕЛЕФОН: +7(916)723-83-01
+        </footer>
+        <a href="#" class="scrollup">Наверх</a>
+    </body>
+</html>
